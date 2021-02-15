@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+
+  "prettier.arrowParens": "always",
+  "prettier.printWidth": 80,
+  "prettier.semi": true,
+  "prettier.trailingComma": "all"
+}
