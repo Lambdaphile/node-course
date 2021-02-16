@@ -46,8 +46,8 @@ const add = (title, body) => {
 const remove = (title) => {
   let notes = load();
 
-  const notesToKeep = (notes = _.filter(notes, (note) => note.title === title));
-  const removed = notes.length !== notesToKeep.length;
+  const notesToKeep = _.filter(notes, (note) => note.title === title);
+  const removed = notesToKeep.length < notes.length;
 
   if (removed) {
     save(notes);
